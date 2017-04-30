@@ -13,6 +13,9 @@ import './css/style.css';
 // Components
 import App from './components/App';
 import Home from './components/Home';
+import About from './components/About'
+import Courses from './components/Courses'
+import Teachers from './components/Teachers'
 
 // Render
 render((
