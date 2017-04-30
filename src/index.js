@@ -23,6 +23,8 @@ render((
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/courses" component={Courses} />
+      <Route path="/teachers" component={Teachers} />
     </div>
   </HashRouter>
 ), document.getElementById('root'));
