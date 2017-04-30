@@ -1,7 +1,7 @@
 // Libs
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route } from 'react-router';
+import { Router, Route, hashHistory } from 'react-router';
 
 // CSS
 import './css/style.css';
@@ -10,7 +10,9 @@ import './css/style.css';
 import App from './components/App';
 
 // Render
-render(
-  <App />,
-  document.getElementById('root')
+render((
+  <Router history={hashHistory}>
+    <Route path="/" component={Home} />
+  </Router>
+), document.getElementById('root')
 );
